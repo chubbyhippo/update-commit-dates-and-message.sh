@@ -18,18 +18,18 @@ A shell script to modify the **committer date**, **author date**, and optionally
 ---
 
 ## Usages
-### Download the Script
-```bash
-curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates-and-message.sh/refs/heads/main/update-commit-dates-and-message.sh -o update-commit-dates-and-message.sh
+### curl
+```shell
+curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates-and-message.sh | /usr/bin/env sh -s abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00" "Adjusted user authentication logic"
 ```
 
 ### Make the Script Executable:
-```bash
+```shell
 chmod +x update-commit-dates-and-message.sh
 ```
 
 ### Syntax:
-```bash
+```shell
 ./update-commit-dates-and-message.sh <commit-id> <committer-date> <author-date> [new-commit-message]
 ```
 
@@ -42,7 +42,7 @@ chmod +x update-commit-dates-and-message.sh
 
 ### Examples:
 #### Update Only Dates:
-```bash
+```shell
 ./update-commit-dates-and-message.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:00:00"
 ```
 In this example:
@@ -50,7 +50,7 @@ In this example:
 - The `committer-date` and `author-date` will be updated to `2023-01-01 12:00:00`.
 
 #### Update Dates and Commit Message:
-```bash
+```shell
 ./update-commit-dates-and-message.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:30:00" "Adjusted user authentication logic"
 ```
 In this example:
