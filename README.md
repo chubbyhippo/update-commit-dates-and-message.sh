@@ -51,7 +51,7 @@ In this example:
 
 #### Update Dates and Commit Message:
 ```shell
-./update-commit-dates-and-message.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:30:00" "Adjusted user authentication logic"
+./update-commit-dates-and-message.sh abc123 "2023-01-01 12:00:00" "2023-01-01 12:30:00" "Updated commit message"
 ```
 In this example:
 - The specified commit's committer date, author date, and commit message will all be updated.
