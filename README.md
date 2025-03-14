@@ -16,7 +16,9 @@ A shell script to modify the **committer date**, **author date**, and optionally
 - Backup the repository if the commit history is shared with others, as rewriting history will require a forced push.
 
 ---
-
+## Download
+```shell
+curl https://raw.githubusercontent.com/chubbyhippo/update-commit-dates.sh/refs/heads/main/update-commit-dates-and-message.sh -o update-commit-dates-and-message.sh
 ## Usages
 ### curl
 ```shell
